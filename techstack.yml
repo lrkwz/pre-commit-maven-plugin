@@ -2,7 +2,7 @@ repo_name: lrkwz/pre-commit-maven-plugin
 report_id: a7c86bd1a4c0884a3bce06859ab8564f
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:27:20+00:00'
+timestamp: '2024-02-29T18:01:11+00:00'
 requested_by: esphen
 provider: github
 branch: master
@@ -135,12 +135,13 @@ tools:
   last_updated_by: Espen Henriksen
   last_updated_on: 2018-06-06 18:35:38.000000000 Z
   vulnerabilities:
-  - name: Improper Handling of Length Parameter Inconsistency in Compress
-    cve_id: CVE-2021-36090
-    cve_url: https://github.com/advisories/GHSA-mc84-pj99-q6hh
-    detected_date: Aug 22
+  - name: 'Apache Commons Compress: Denial of service caused by an infinite loop for
+      a corrupted DUMP file'
+    cve_id: CVE-2024-25710
+    cve_url: https://github.com/advisories/GHSA-4g9r-vxhx-9pgx
+    detected_date: Feb 29
     severity: high
-    first_patched: '1.21'
+    first_patched: 1.26.0
   - name: Excessive Iteration in Compress
     cve_id: CVE-2021-35515
     cve_url: https://github.com/advisories/GHSA-7hfm-57qf-j43q
@@ -159,12 +160,12 @@ tools:
     detected_date: Aug 22
     severity: high
     first_patched: '1.21'
-  - name: Moderate severity vulnerability that affects org.apache.commons:commons-compress
-    cve_id: CVE-2018-11771
-    cve_url: https://github.com/advisories/GHSA-hrmr-f5m6-m9pq
+  - name: Improper Handling of Length Parameter Inconsistency in Compress
+    cve_id: CVE-2021-36090
+    cve_url: https://github.com/advisories/GHSA-mc84-pj99-q6hh
     detected_date: Aug 22
-    severity: moderate
-    first_patched: '1.18'
+    severity: high
+    first_patched: '1.21'
   - name: Apache Commons Compress vulnerable to denial of service due to infinite
       loop
     cve_id: CVE-2018-1324
@@ -172,6 +173,12 @@ tools:
     detected_date: Aug 22
     severity: moderate
     first_patched: '1.16'
+  - name: Moderate severity vulnerability that affects org.apache.commons:commons-compress
+    cve_id: CVE-2018-11771
+    cve_url: https://github.com/advisories/GHSA-hrmr-f5m6-m9pq
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: '1.18'
 - name: org.apache.httpcomponents:httpclient
   description: Apache HttpComponents Client
   version: 4.5.1
